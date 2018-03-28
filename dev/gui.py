@@ -5,7 +5,7 @@ class Application(Frame):
 
     def upload(self):
         val = "lala"
-        subprocess.run(["git","submodule","add", "."], shell=True)
+        subprocess.run(["git","submodule","add", "../files"], shell=True)
         subprocess.run(["git", "add", "."], shell=True)
         subprocess.run(["git", "commit", "-m", val], shell=True)
         subprocess.run(["git", "push"])
