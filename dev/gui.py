@@ -9,7 +9,7 @@ class Application(Frame):
         subprocess.run(["git", "add","-A", "."], shell=True)
         subprocess.run(["git", "commit", "-m", val], shell=True)
         subprocess.run(["git", "push"])
-        subprocess.run(["cls"])
+        # subprocess.run(["cls"])
         # return
     def download(self):
         subprocess.run(["git","pull"])
